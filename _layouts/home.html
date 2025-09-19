@@ -20,12 +20,17 @@ custom-javascript:
             {% endfor %}
         </div>
 
-        <img class="hero-introduction__image"
-            srcset="{{ page.hero.image.x1 }} 1x,
-                    {{ page.hero.image.x2 }} 2x,
-                    {{ page.hero.image.x3 }} 3x"
-            src="{{ page.hero.image.x1 }}"
-            alt="{{ page.hero.image.description }}">
+        <picture>
+            <source type="image/webp" 
+                    srcset="{% assign webp_x1 = page.hero.image.x1 | replace: '.jpg', '.webp' | replace: '.png', '.webp' | replace: '.jpeg', '.webp' %}{{ webp_x1 }} 1x,{% assign webp_x2 = page.hero.image.x2 | replace: '.jpg', '.webp' | replace: '.png', '.webp' | replace: '.jpeg', '.webp' %} {{ webp_x2 }} 2x,{% assign webp_x3 = page.hero.image.x3 | replace: '.jpg', '.webp' | replace: '.png', '.webp' | replace: '.jpeg', '.webp' %} {{ webp_x3 }} 3x">
+            <img class="hero-introduction__image"
+                srcset="{{ page.hero.image.x1 }} 1x,
+                        {{ page.hero.image.x2 }} 2x,
+                        {{ page.hero.image.x3 }} 3x"
+                src="{{ page.hero.image.x1 }}"
+                alt="{{ page.hero.image.description }}"
+                loading="lazy">
+        </picture>
     </div>
 </section>
 
@@ -43,7 +48,10 @@ custom-javascript:
         <div class="project-grid__teaser">
             <a href="{{ project.url }}">
                 <div class="project-grid__image-zoom-container">
-                    <img src="{{ project.cover-image.x2 }}" alt="{{ project.cover-image.description }}" class="project-grid__image">
+                    <picture>
+                        <source type="image/webp" src="{% assign webp_cover = project.cover-image.x2 | replace: '.jpg', '.webp' | replace: '.png', '.webp' | replace: '.jpeg', '.webp' %}{{ webp_cover }}">
+                        <img src="{{ project.cover-image.x2 }}" alt="{{ project.cover-image.description }}" class="project-grid__image" loading="lazy">
+                    </picture>
                 </div>
             </a>
             <h3 class="project-grid__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>

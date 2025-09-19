@@ -1,6 +1,11 @@
-<img class="{{ include.class }}"
-     srcset="{{ include.x1 }} 1x{% if include.x2 != "" %},
-             {{ include.x2 }} 2x{% endif %}{% if include.x3 != "" %},
-             {{ include.x3 }} 3x{% endif %}"
-     src="{{ include.x1 }}"
-     alt="{{ include.description }}">
+<picture>
+  <source type="image/webp" 
+          srcset="{% assign webp_x1 = include.x1 | replace: '.jpg', '.webp' | replace: '.png', '.webp' | replace: '.jpeg', '.webp' %}{{ webp_x1 }} 1x{% if include.x2 != "" %},{% assign webp_x2 = include.x2 | replace: '.jpg', '.webp' | replace: '.png', '.webp' | replace: '.jpeg', '.webp' %} {{ webp_x2 }} 2x{% endif %}{% if include.x3 != "" %},{% assign webp_x3 = include.x3 | replace: '.jpg', '.webp' | replace: '.png', '.webp' | replace: '.jpeg', '.webp' %} {{ webp_x3 }} 3x{% endif %}">
+  <img class="{{ include.class }}"
+       srcset="{{ include.x1 }} 1x{% if include.x2 != "" %},
+               {{ include.x2 }} 2x{% endif %}{% if include.x3 != "" %},
+               {{ include.x3 }} 3x{% endif %}"
+       src="{{ include.x1 }}"
+       alt="{{ include.description }}"
+       loading="lazy">
+</picture>
