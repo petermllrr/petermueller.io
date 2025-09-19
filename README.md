@@ -86,6 +86,6 @@ bundle exec jekyll serve --baseurl ''
 * **Static site generator:** [Jekyll](https://jekyllrb.com/)
 * **Configuration:** [GitHub Pages Gem](https://github.com/github/pages-gem)
 * **HTML/CSS framework:** [HTML5 Boilerplate](https://html5boilerplate.com/)
-* **Iconfont:** [Fontello](http://fontello.com/)
+* **Iconfont:** [Fontello](https://fontello.com/)
 * **Masonry layout helper:** [Masonry](https://github.com/desandro/masonry)
 * **Image preloader:** [Images Loaded](https://github.com/desandro/imagesloaded)

@@ -134,6 +134,7 @@ $spacing-base: 10px;
     url("/assets/fonts/europa-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -141,6 +142,7 @@ $spacing-base: 10px;
   src: url("/assets/fonts/europa-bold-webfont.woff2") format("woff2"), url("/assets/fonts/europa-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 /*
