@@ -29,4 +29,4 @@ end
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Required on Ruby v3.0.0 or higher, see https://jekyllrb.com/docs/
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.9"
