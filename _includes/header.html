@@ -1,4 +1,4 @@
-<header class="header">
+<nav class="header">
     <div class="header__container">
         <a href="/">
             <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="header__logo" aria-labelledby="logo-title" aria-describedby="logo-description" role="img">
@@ -11,7 +11,7 @@
                 </g>
             </svg>
         </a>
-        <nav class="header__nav">
+        <div class="header__nav">
             <ul class="header__nav-list">
                 {% for link in site.navigation %}
                 <li class="header__nav-item">
@@ -19,6 +19,6 @@
                 </li>
                 {% endfor %}
             </ul>
-        </nav>
+        </div>
     </div>
-</header>
+</nav>
