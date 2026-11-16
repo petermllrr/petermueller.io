@@ -1,0 +1,28 @@
+---
+layout: layouts/base.liquid
+title: Page not found — Peter Müller
+description: The requested page could not be found.
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<main class="column">
+  <nav aria-label="Back">
+    <a class="back-link" href="/">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15.75 9.00013C15.75 9.14931 15.6907 9.29238 15.5853 9.39786C15.4798 9.50335 15.3367 9.56261 15.1875 9.56261H4.17061L8.27321 13.6645C8.32547 13.7168 8.36693 13.7788 8.39521 13.8471C8.4235 13.9154 8.43805 13.9886 8.43805 14.0625C8.43805 14.1364 8.4235 14.2096 8.39521 14.2778C8.36693 14.3461 8.32547 14.4082 8.27321 14.4604C8.22095 14.5127 8.15891 14.5541 8.09063 14.5824C8.02235 14.6107 7.94917 14.6253 7.87526 14.6253C7.80135 14.6253 7.72817 14.6107 7.65989 14.5824C7.5916 14.5541 7.52956 14.5127 7.4773 14.4604L2.41497 9.39808C2.36267 9.34585 2.32118 9.28381 2.29288 9.21553C2.26457 9.14724 2.25 9.07405 2.25 9.00013C2.25 8.92621 2.26457 8.85302 2.29288 8.78473C2.32118 8.71645 2.36267 8.65441 2.41497 8.60217L7.4773 3.53984C7.58285 3.43429 7.726 3.375 7.87526 3.375C8.02452 3.375 8.16767 3.43429 8.27321 3.53984C8.37876 3.64538 8.43805 3.78853 8.43805 3.93779C8.43805 4.08706 8.37876 4.23021 8.27321 4.33575L4.17061 8.43765H15.1875C15.3367 8.43765 15.4798 8.49691 15.5853 8.60239C15.6907 8.70788 15.75 8.85095 15.75 9.00013Z" fill="currentColor"/>
+      </svg>
+      <img class="back-avatar" src="/avatar.webp" alt="" width="22" height="22">
+      <span>Home</span>
+    </a>
+  </nav>
+
+  <header class="case-intro">
+    <div class="case-title-block">
+      <h1 class="case-title">Page not found</h1>
+      <p class="case-meta">404</p>
+    </div>
+    <p class="case-lead">The requested page could not be found.</p>
+  </header>
+
+  {% include "footer.liquid" %}
+</main>
