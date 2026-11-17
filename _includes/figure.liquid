@@ -1,6 +1,6 @@
 <figure class="case-figure">
-<div class="case-media{% if outlined %} case-media-outlined{% endif %}">
+<button class="case-media{% if outlined %} case-media-outlined{% endif %}" type="button">
 <img src="{{ src }}" alt="{{ caption | escape }}" loading="lazy">
-</div>
+</button>
 {% if caption and caption != "" %}<figcaption class="case-caption">{{ caption }}</figcaption>{% endif %}
 </figure>
