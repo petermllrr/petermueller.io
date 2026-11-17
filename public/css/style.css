@@ -23,34 +23,34 @@
 
 body {
   margin: 0;
-  padding: 138px 24px;
+  padding: 158px 24px;
   background: var(--bg);
   color: var(--fg);
   font-family: "Figtree", system-ui, -apple-system, sans-serif;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 450;
   -webkit-font-smoothing: antialiased;
 }
 
 .column {
-  max-width: 600px;
+  max-width: 672px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 64px;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 26px;
+  gap: 28px;
 }
 
 .avatar {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: block;
   object-fit: cover;
@@ -65,13 +65,13 @@ body {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 14px;
 }
 
 .section-heading {
   margin: 0;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 600;
   color: var(--fg);
 }
@@ -80,7 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
 }
 
 a {
@@ -126,13 +126,13 @@ a:focus-visible {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
 }
 
 .row {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
 }
 
 .row-label {
@@ -143,7 +143,7 @@ a:focus-visible {
   flex: 1;
   height: 1px;
   background: var(--line);
-  min-width: 12px;
+  min-width: 4px;
 }
 
 .date {
@@ -161,61 +161,61 @@ a:focus-visible {
 }
 
 .exp-company {
-  margin-right: 6.5px;
+  margin-right: 7px;
   white-space: nowrap;
 }
 
 .exp-role {
   color: var(--fg-muted);
-  margin-right: 13px;
+  margin-right: 14px;
   white-space: nowrap;
 }
 
 .exp-row .leader {
-  margin-right: 13px;
+  margin-right: 14px;
 }
 
 .project-groups {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 32px;
 }
 
 .project-group {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
 }
 
 .group-heading {
   margin: 0;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 450;
   color: var(--fg-muted);
 }
 
 .footer {
   border-top: 1px solid var(--line);
-  padding-top: 17px;
+  padding-top: 18px;
 }
 
 .footer-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 13px;
+  gap: 14px;
 }
 
 .social-links {
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 18px;
 }
 
 .social-link {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -236,7 +236,7 @@ a:focus-visible {
 .back-link {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   color: var(--fg-muted);
   text-decoration: none;
 }
@@ -247,8 +247,8 @@ a:focus-visible {
 }
 
 .back-avatar {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -258,13 +258,13 @@ a:focus-visible {
 .case-intro {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 28px;
 }
 
 .case-title {
   margin: 0;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 600;
   color: var(--fg);
 }
@@ -282,35 +282,35 @@ a:focus-visible {
 }
 
 .case-body h2 {
-  margin: 60px 0 0 0;
-  font-size: 15px;
-  line-height: 24px;
+  margin: 64px 0 0 0;
+  font-size: 16px;
+  line-height: 26px;
   font-weight: 600;
   color: var(--fg);
 }
 
 .case-body p {
-  margin: 13px 0 0 0;
+  margin: 14px 0 0 0;
   color: var(--fg);
 }
 
 .case-figure {
-  margin: 26px 0 0 0;
+  margin: 28px 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
 }
 
 .case-body h2 + .case-figure {
-  margin-top: 13px;
+  margin-top: 14px;
 }
 
 .case-figure + .case-figure {
-  margin-top: 34px;
+  margin-top: 36px;
 }
 
 .case-figure + p {
-  margin-top: 26px;
+  margin-top: 28px;
 }
 
 .case-media {
@@ -332,8 +332,8 @@ a:focus-visible {
 
 .case-caption {
   color: var(--fg-muted);
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .case-body > :first-child {
@@ -342,25 +342,25 @@ a:focus-visible {
 
 @media (max-width: 479px) {
   body {
-    padding: 74px 24px;
+    padding: 84px 24px;
   }
 
   .column {
-    gap: 51px;
+    gap: 54px;
   }
 
   .case-body h2 {
-    margin-top: 51px;
+    margin-top: 54px;
   }
 
   .exp-list {
-    gap: 13px;
+    gap: 14px;
   }
 
   .exp-row {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    column-gap: 13px;
+    column-gap: 14px;
     row-gap: 0;
     align-items: center;
   }
@@ -391,7 +391,7 @@ a:focus-visible {
   .award-row {
     align-items: flex-start;
     justify-content: space-between;
-    gap: 13px;
+    gap: 14px;
   }
 
   .award-row .leader {
@@ -401,6 +401,6 @@ a:focus-visible {
   .footer-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 13px;
+    gap: 14px;
   }
 }
