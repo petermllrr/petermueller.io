@@ -1,21 +1,14 @@
-interface EleventyConfig {
-  addPassthroughCopy(
-    paths: string | Record<string, string>,
-  ): void;
-}
+import type UserConfig from "@11ty/eleventy/UserConfig";
 
-export default function (eleventyConfig: EleventyConfig) {
+export default function (eleventyConfig: UserConfig) {
   eleventyConfig.addPassthroughCopy({ "public/": "/" });
+  eleventyConfig.setServerOptions({ watch: ["_site/js/**/*.js"] });
 
   return {
     dir: {
       input: "content",
       includes: "../_includes",
       data: "../_data",
-      output: "_site",
     },
-    templateFormats: ["md", "liquid", "html"],
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "liquid",
   };
 }
